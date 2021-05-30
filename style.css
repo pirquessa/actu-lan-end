@@ -1,0 +1,78 @@
+body {background: no-repeat scroll center 90px #025A8A; font-family: Verdana, sans-serif; font-size: 12px; margin: 0; margin-left: 1px; text-align:center;}
+table tr td{vertical-align: middle;}
+p{margin: 0 0 10px 0;}
+li{margin-left: 15px;}
+img{font-size: 8px;}
+a img{border: 0;}
+textarea{resize: none;}
+
+a, .cliquable{color: #0f7eb9; cursor: pointer; text-decoration: none;}
+a:hover, .cliquable:hover{color: #00365b;}
+
+label{display:block; font-size: 0; line-height: 0;}
+.cache{display: none;}
+.truncate {overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; white-space: nowrap;}
+
+
+/* Global */
+#bgLink {bottom: 0; left: 0; position: absolute; right: 0; top: 90px;}
+#conteneur{border-radius: 15px; -webkit-border-radius: 15px; box-shadow: 0 30px 40px 10px rgba(0, 0, 0, 0.7); -webkit-box-shadow: 0 30px 40px 10px rgba(0, 0, 0, 0.7); margin: 7em auto 10px; position: relative; text-align: left; width:980px;}
+#conteneur:after {clear: both; content: ""; display: table;}
+
+#header .puce{background: red; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 1px 1px 2px #333; -webkit-box-shadow: 1px 1px 2px #333; color:#fff; font-size: 10px; font-weight: bold; line-height: 10px; padding: 3px 4px; position: absolute; text-shadow: 1px 1px 2px #000; z-index: 10px;}
+#header .topbar{background: url("./img/head_bg.png") repeat-y center 0 #0078aa; height: 60px;}
+#header .content{margin: 0 auto; position: relative; text-align: left; width:980px;}
+#header .topbar .logo{background: url("./img/header-sprites.png") no-repeat 0 0 transparent; display: inline-block; float: left; font-size: 0; height: 60px; line-height: 0; width: 218px;}
+
+#header .menubar{background: #fff; height: 30px;}
+#header .menubar ul.mainmenu li{float: left; margin-left: 0; position: relative;}
+#header .menubar ul.mainmenu li a{color: #222222; display: inline-block; font-size: 14px; height: 30px; line-height: 30px; padding: 0 9px; text-align: center; text-decoration: none; text-transform: uppercase;}
+#header .menubar ul.mainmenu li a:hover, #header .menubar ul.mainmenu li a.active{background: url("./img/header_bg.png") repeat-x 0 -116px;}
+#header .menubar ul.socialmenu{margin-right: 10px;}
+#header .menubar ul.socialmenu li {float: right; margin-left: 13px; margin-top: 3px;}
+#header .menubar ul.socialmenu li a{background: url("./img/header-sprites.png") no-repeat; display: inline-block; float: left; font-size: 0; height: 25px; line-height: 0; width: 25px;}
+#header .menubar ul.socialmenu li a.facebook{background-position: -154px -156px;}
+#header .menubar ul.socialmenu li a.twitter{background-position: -179px -156px;}
+
+.ligne{float: left; width: 100%;}
+.ligne.first{background-color: #fff; color: #000; border-radius: 15px 15px 0 0; -webkit-border-radius: 15px 15px 0 0; padding-top: 10px;}
+
+.ligne.first .corp {line-height: 1.1;}
+.ligne.first .corp p{margin: 7px 0px;}
+.ligne.first .corp p .sign{float: right;}
+.ligne.first .corp h3{margin: 7px 0px; text-align: center; font-size: 1.5em;}
+.ligne.first .corp img{display: block; margin: 4em auto;}
+.ligne.first .corp .screens {display: flex; margin: 4em 0;}
+.ligne.first .corp .screens .screen{flex: 30%; margin: 0 10px;}
+.ligne.first .corp .screens .screen img {width: 100%; margin: 0;}
+.ligne.first .corp .screens .screen p {text-align: center;}
+
+#ligne5{background: #000; border-radius: 0 0 15px 15px; -webkit-border-radius: 0 0 15px 15px; color: #fff; height: 32px; text-align: center;}
+  #ligne5 div.primaire{font-size: 11px; margin: 3px 5px;}
+    #ligne5 div.primaire a{color: #fff; margin: 0 3px;}
+  #ligne5 div.secondaire{font-size: 10px; margin: 0 5px;}
+
+/* Contenu */
+
+.bloc{margin: 0 0 7px 0;}
+.bloc .titre{display: block; height: 20px; box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.8), 0 0 2px rgba(255, 255, 255, 0.4) inset, 0 4px 6px rgba(255, 255, 255, 0.4) inset, 0 11px 0 -2px rgba(255, 255, 255, 0.2) inset, 0 13px 8px rgba(0, 0, 0, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.2); margin-bottom: 2px; overflow:hidden; text-shadow: 1px 1px 1px #000;}
+.bloc.bloc1 .titre{background-color: #fe7e00;}
+.bloc.bloc2 .titre{background-color: #5995c9;}
+.bloc.bloc3 .titre{background-color: #bcd11b;}
+.bloc .titre span, .bloc .titre h1{background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIdJREFUeNqs0U0LgCAMgGH7gLr0/08RhQqB0aV+X81AEFHTbYP3+jA28fDNCY2CCbuhCRIc4OUwDvCABodRQQ31PkYBJdSFGBa0m7UxDAOaHFYLmtjNsOCeuhkGtA9oSrAScKvB/kBVi+VAjcFSoMJiMVBSsBBcqZgPLhyYA2cuzPZBnPMKMAC9USncXUU/0QAAAABJRU5ErkJggg==') no-repeat; color: #FFFFFF; display: block; font-size: 11px; font-weight: bold; height: 100%; line-height: 20px; padding: 0 25px;}
+.ligne.events .bloc .titre h1, #col12 .bloc .titre span{background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALJJREFUeNqsk80KwjAQhJfFg+/nwYD1B30xUWpBaD3pi3lRqK6zkIUeFFo7Ax8hED5CJqtmNgUXI0VF5AFW4CaEaF7vIIErSxjSGWhYQs8TzEHFEnpasAQlS+h55aIqltDzBgWoWcKQpiFS7XGmzUWdWcJ409SnKB3wPJbbP7KEIV2DE0sY0uLXl9I/B8Kli2831RFjGzctWcJuUQeWMKQbsPfNRDhx6dYnS4UXl+4+AgwAJdx0T4mbQbQAAAAASUVORK5CYII='); background-position: right;}
+.bloc .titre span span, .bloc .titre h1 span{background-image: none; display: inline; padding: 0;}
+.bloc .stitre1, .bloc .stitre2, .bloc .stitre3{border-bottom: 1px solid #7f7f7f;}
+.bloc .stitre2{border-bottom-style: dotted;}
+.bloc .stitre3, #col2 .bloc .actions{border-bottom: none;  border-top: 1px dotted #7f7f7f;}
+.bloc .stitre1 span, .bloc .stitre2 span, .bloc .stitre3 span{color: #7f7f7f; font-size: 10px; float: right;}
+.bloc .stitre1 span span, .bloc .stitre2 span span, .bloc .stitre3 span span{float: none; font-weight: bold; margin: 0;}
+.bloc .stitre1 h2, .bloc .stitre1 h3, .bloc .stitre2 h2, .bloc .stitre2 h3{color: #7f7f7f; font-weight: bold; font-size: 12px; margin: 0; text-transform: uppercase;}
+.bloc .stitre2 h2, .bloc .stitre2 h3{margin: 0 0 3px 0; text-transform: none;}
+.bloc .stitre1 h3, .bloc .stitre2 h3{font-size: 10px;}
+.bloc .corp{display: inline-block; margin: 4px 10px;}
+.bloc .corp.cache{display: none;}
+
+/* Home */
+.ligne.events .bloc{margin: 5px 20px 0;}
+.ligne.events .corp{width: 920px; margin-bottom: 0; margin-top: 9px;}
