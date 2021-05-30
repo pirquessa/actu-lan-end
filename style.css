@@ -40,7 +40,7 @@ label{display:block; font-size: 0; line-height: 0;}
 .ligne.first .corp {line-height: 1.1;}
 .ligne.first .corp p{margin: 7px 0px;}
 .ligne.first .corp p .sign{float: right;}
-.ligne.first .corp h3{margin: 7px 0px; text-align: center; font-size: 1.5em;}
+.ligne.first .corp p.rip{margin: 7px 0px; text-align: center; font-size: 1.5em; font-weight: bold;}
 .ligne.first .corp img{display: block; margin: 4em auto;}
 .ligne.first .corp .screens {display: flex; margin: 4em 0;}
 .ligne.first .corp .screens .screen{flex: 30%; margin: 0 10px;}
